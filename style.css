@@ -1,0 +1,127 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #63c9cc;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content section */
+main {
+    padding: 20px;
+}
+
+/* Content Section Styling */
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #30556b;
+}
+
+.content-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Gallery section */
+.gallery-images {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.gallery-images img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Menambahkan garis bawah pada judul */
+.underline-title {
+    border-bottom: 2px solid #174869; /* Garis hijau dengan ketebalan 2px */
+    padding-bottom: 10px; /* Jarak antara teks dan garis */
+    margin-bottom: 20px; /* Jarak antara garis dan konten berikutnya */
+}
